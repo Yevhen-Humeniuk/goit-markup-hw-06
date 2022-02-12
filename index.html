@@ -240,41 +240,55 @@
     <footer class="footer ">
         <div class="container footer-container">
             <div class="footer-adres-container">
-        <a href="index.html" class="link-logo"> Web<span class="logo-down">Studio</span></a>
-        <address class="footer-adress">
-            <ul class="footer-list">
-                <li class="footer-list-item"><a href="https://goo.gl/maps/oyDhFiv2QyC5TaA9A" class="footer-item-adres" target=_blank rel="noopener noreferrer nofollow">г.
-                        Киев, пр-т Леси Украинки, 26</a></li>
-                <li class="footer-list-item"><a href="mailto:info@example.com" class="footer-link">info@example.com</a></li>
-                <li class="footer-list-item"><a href="tel:+380991111111" class="footer-link">+380991111111</a></li>
-            </ul>
-        </address>
-        </div>
-        <div class="footer-socials">
-            <p class="footer-socials-title">присоединяйтесь</p>
-            <ul class="footer-socials-list">
-                <li class="footer-socials-item">
-                    <a href="" class="footer-socials-link"><svg class="footer-socials-icon" width="20" height="20">
-                            <use href="./images/icons.svg#icon-instagram"></use>
-                        </svg></a>
-                </li>
-                <li class="footer-socials-item">
-                    <a href="" class="footer-socials-link"><svg class="footer-socials-icon" width="20" height="20">
-                            <use href="./images/icons.svg#icon-twitter"></use>
-                        </svg></a>
-                </li>
-                <li class="footer-socials-item">
-                    <a href="" class="footer-socials-link"><svg class="footer-socials-icon" width="20" height="20">
-                            <use href="./images/icons.svg#icon-facebook"></use>
-                        </svg></a>
-                </li>
-                <li class="footer-socials-item">
-                    <a href="" class="footer-socials-link"><svg class="footer-socials-icon" width="20" height="20">
-                            <use href="./images/icons.svg#icon-linkedin"></use>
-                        </svg></a>
-                </li>
-            </ul>
-        </div>
+                <a href="index.html" class="link-logo"> Web<span class="logo-down">Studio</span></a>
+                <address class="footer-adress">
+                    <ul class="footer-list">
+                        <li class="footer-list-item"><a href="https://goo.gl/maps/oyDhFiv2QyC5TaA9A"
+                                class="footer-item-adres" target=_blank rel="noopener noreferrer nofollow">г.
+                                Киев, пр-т Леси Украинки, 26</a></li>
+                        <li class="footer-list-item"><a href="mailto:info@example.com"
+                                class="footer-link">info@example.com</a></li>
+                        <li class="footer-list-item"><a href="tel:+380991111111" class="footer-link">+380991111111</a></li>
+                    </ul>
+                </address>
+            </div>
+            <div class="footer-socials">
+                <p class="footer-socials-title">присоединяйтесь</p>
+                <ul class="footer-socials-list">
+                    <li class="footer-socials-item">
+                        <a href="" class="footer-socials-link"><svg class="footer-socials-icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg></a>
+                    </li>
+                    <li class="footer-socials-item">
+                        <a href="" class="footer-socials-link"><svg class="footer-socials-icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg></a>
+                    </li>
+                    <li class="footer-socials-item">
+                        <a href="" class="footer-socials-link"><svg class="footer-socials-icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg></a>
+                    </li>
+                    <li class="footer-socials-item">
+                        <a href="" class="footer-socials-link"><svg class="footer-socials-icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="subscribe-footer-container">
+                <p class="subscribe-title">Подпишитесь на рассылку</p>
+                <div class="subscribe-area">
+                    <form class="mail-form">
+                        <input type="email" class="input-area" placeholder="E-mail" class="placeholder-text" />
+                    </form>
+                    <button type="submit" class="subscribe-btn">Подписаться<svg class="subscribe-btn-icon" width="24"
+                            height="24">
+                            <use href="./images/icons.svg#icon-icon-send"></use>
+                        </svg></button>
+                </div>
+            </div>
         </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -282,6 +296,38 @@
             <button type="button" class="modal-btn" data-modal-close><svg class="modal-icon" width="11" height="11">
                 <use href="./images/icons.svg#icon-Vector"></use>
             </svg></button>
+            <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+            <div class="modal-reg-container">
+            <form name="signup_form" class="modal-form" autocomplete="on" novalidate>
+                <label class="modal-label">
+                    Имя
+                    <input type="text" class="input-modal-form" name="name"/>
+                </label>
+                <label class="modal-label">
+                    Телефон
+                    <input type="tel" class="input-modal-form" name="telephone" />
+                </label>
+                <label class="modal-label">
+                    Почта
+                    <input type="email" class="input-modal-form" name="mail" />
+                </label>
+                <label class="modal-label">
+                    Комментарий
+                    <textarea name="feedback" class="modal-textarea" placeholder="Введите текст"></textarea>
+                </label>
+                <div class="checkbox-container">
+                <input type="checkbox" 
+                class="modal-check visually-hidden"
+                id="modal-check" 
+                name="modal-check"/>
+                <label for="modal-check" class="modal-check-text">Соглашаюсь с рассылкой и принимаю
+                    <a href="">Условия договора</a>
+                </label>
+                <button type="submit" class="modal-botton"></button>
+                </div>
+                </div>
+
+            </form>
         </div>
     </div>
     <script src="./modal.js"></script>

@@ -236,7 +236,9 @@ body {
   display: flex;
   justify-content: center;
 }
-
+.checkbox-container {
+  margin-top: 20px;
+}
 .advantages-list {
   display: flex;
 }
@@ -576,6 +578,13 @@ body {
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  transition: border 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mail-form:hover,
+.mail-form:focus,
+.mail-form:active {
+  border: 2px solid var(--accent-color);
 }
 .input-area {
   width: 100%;
@@ -589,10 +598,13 @@ body {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.subscribe-btn-tumb {
-  position: relative;
-}
 .subscribe-btn {
+  display: flex;
+  cursor: pointer;
+  flex-direction: row;
+  padding: 10px 28px 10px 29px;
+  align-items: center;
+  justify-content: center;
   width: 200px;
   height: 50px;
   margin-left: 12px;
@@ -601,17 +613,14 @@ body {
   border-radius: 4px;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
+
   letter-spacing: 0.06em;
   color: #ffffff;
 }
 .subscribe-btn-icon {
-  position: absolute;
-  top: 0;
-  /* display: flex;
-  align-items: center; */
+  margin-left: 10px;
+  display: flex;
+  fill: #ffffff;
 }
 /*--portfolio--*/
 
@@ -773,4 +782,80 @@ body {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
+}
+.modal-title {
+  margin-top: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.modal-form {
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.modal-label {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+.modal-label + .modal-label {
+  margin-top: 10px;
+}
+.input-modal-form {
+  margin-top: 4px;
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.modal-textarea {
+  width: 448px;
+  height: 120px;
+  margin-top: 4px;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 12px 16px 12px 16px;
+}
+.modal-check-text {
+  font-size: 14px;
+  color: #999999;
+  display: flex;
+  align-items: center;
+}
+.modal-check-text::before {
+  content: "";
+  width: 16px;
+  height: 15px;
+  border: 2px solid #000000;
+  border-radius: 2px;
+  display: block;
+  margin-right: 10px;
+}
+.modal-check:checked + .modal-check-text::before {
+  background-image: url(../images/icon-check.svg);
+  border: none;
+}
+.modal-botton {
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+}
+.modal-reg-container {
+  margin-top: 12px;
 }
