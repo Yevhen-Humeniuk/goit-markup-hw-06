@@ -877,3 +877,12 @@ body {
 .modal-reg-container {
   margin-top: 12px;
 }
+.input-modal-form {
+  position: relative;
+  width: 448px;
+  height: 40px;
+}
+.modal-form-icon {
+  top: 0;
+  left: 15px;
+}
